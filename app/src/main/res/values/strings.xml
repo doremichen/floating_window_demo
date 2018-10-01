@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoFloatWindowApp</string>
+    <string name="label_hello">Hello World!</string>
+    <string name="action_start_fw_demo">Start floation window</string>
+    <string name="label_hello_collapse_view">Hello collapse View</string>
+    <string name="label_close_widget">Close</string>
+</resources>

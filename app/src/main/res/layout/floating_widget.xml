@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/floationg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <!-- Colapse layou -->
+        <RelativeLayout
+            android:id="@+id/colapse_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/tv_collapse_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_dialog_alert"
+                android:background="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btn_close_widget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_close_widget"
+                android:layout_below="@+id/tv_collapse_show"/>
+        </RelativeLayout>
+        <!-- Expend layout -->
+        <LinearLayout
+            android:id="@+id/expend_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/img_expend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#adadad"
+                android:src="@android:drawable/ic_dialog_alert"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription"/>
+            <LinearLayout
+                android:id="@+id/expend_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="demo detail list 1"
+                    android:textAlignment="center"
+                    android:textColor="#0fff00"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="demo detail list 2"
+                    android:textAlignment="center"
+                    android:textColor="#0fffff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
